@@ -39,7 +39,7 @@ a
 	margin-top: 30px;
 }
 
-#mainNav 
+#mainNav
 {
 	margin-left: auto;
 	margin-top: 100px;
@@ -54,6 +54,8 @@ a
 #mainNav ul li a
 {
   padding: 10px;
+	color: gray;
+	font-weight: 600;
 }
 
 #about p
@@ -63,22 +65,80 @@ a
 	margin: 50px;
 }
 
+.mainMusic
+{
+	height: 350px;
+	width: 960px;
+	background-color: black;
+	opacity: 0.75;
+}
+
 #musicIcons h2
 {
 	font-family: Bangers;
 	font-size: 30px;
 	margin: 50px;
-	margin-top: 200px;
+	margin-top: 40px;
 }
+
+#soundBoxs
+{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 90px;
+	margin-left: 260px;
+}
+
+.box1
+{
+	width: 80px;
+	height: 80px;
+	background-color: blue;
+	opacity: 0.5;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+.box2
+{
+	width: 80px;
+	height: 80px;
+	background-color: blue;
+	opacity: 0.5;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+.box3
+{
+	width: 80px;
+	height: 80px;
+	background-color: blue;
+	opacity: 0.5;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+.box4
+{
+	width: 80px;
+	height: 80px;
+	background-color: blue;
+	opacity: 0.5;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+
 
 #mainFooter
 {
 	width: 960px;
+	height: 90px;
+	background-color: gray;
+	opacity: 0.5;
 }
 
 #footerNav
 {
 	text-align: center;
+	padding-top: 30px;
 }
 
 #footerNav li
@@ -89,5 +149,6 @@ a
 
 #footerNav ul li a
 {
-  padding: 10px;
+  padding: 15px;
+	color: black;
 }
