@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*CSS Doc*/
+.hidden
+{
+	display: none;
+}
+
+#siteContainer
+{
+	width: 960px;
+	height: 0px;
+	background-color: #efefef;
+	margin: 0 auto;
+}
+
+body
+{
+	background-color: #efefef;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+#mainHeader
+{
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+#mainHeader h1
+{
+	font-family: Bangers;
+	font-size: 50px;
+	margin-top: 30px;
+	padding-left: 300px;
+	margin-top: 30px;
+}
+
+#mainNav 
+{
+	margin-left: auto;
+	margin-top: 100px;
+}
+
+#mainNav li
+{
+ display: inline;
+ font-size: 20px;
+}
+
+#mainNav ul li a
+{
+  padding: 10px;
+}
+
+#about p
+{
+	font-family: Bangers;
+	font-size: 30px;
+	margin: 50px;
+}
+
+#musicIcons h2
+{
+	font-family: Bangers;
+	font-size: 30px;
+	margin: 50px;
+	margin-top: 200px;
+}
+
+#mainFooter
+{
+	width: 960px;
+}
+
+#footerNav
+{
+	text-align: center;
+}
+
+#footerNav li
+{
+ display: inline;
+ font-size: 20px;
+}
+
+#footerNav ul li a
+{
+  padding: 10px;
+}
