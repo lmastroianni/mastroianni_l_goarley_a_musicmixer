@@ -30,6 +30,11 @@ a
 	flex-direction: row;
 }
 
+#title
+{
+	margin: 0 auto;
+}
+
 #mainHeader h1
 {
 	font-family: Bangers;
@@ -56,6 +61,12 @@ a
   padding: 10px;
 	color: gray;
 	font-weight: 600;
+}
+
+#mainNav ul li a:hover
+{
+	color: red;
+	opacity: 0.75;
 }
 
 #about p
@@ -215,4 +226,10 @@ a
 {
   padding: 15px;
 	color: black;
+}
+
+#footerNav ul li a:hover
+{
+	color: red;
+	opacity: 0.75;
 }
