@@ -8,14 +8,15 @@
 #siteContainer
 {
 	width: 960px;
-	height: 0px;
-	background-color: #efefef;
+	background-color: #6C4A76;
+
 	margin: 0 auto;
 }
 
 body
 {
-	background-color: #efefef;
+	color: bl ack;
+	height: 100%;
 }
 
 a
@@ -75,26 +76,15 @@ a
 
 #turnTable
 {
-	height: 100px;
-  width: 100px;
-  background-color: red;
-  border-radius: 50%;
-	border-style: solid;
-	border-color: black;
-  border-width: 100px;
-  border-style: solid;
+	height: 300px;
+	width: 300px;
 	margin-top: -325px;
-	margin-left: 25px;
+	margin-left: 45px;
 }
-.turnTableDot
-{
-	height: 10px;
-  width: 10px;
-  background-color: black;
-  border-radius: 50%;
-	margin-top: -155px;
-	margin-bottom: 200px;
-	margin-left: 170px;
+
+#lines:hover {
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
 }
 
 #musicIcons h2
