@@ -9,14 +9,16 @@
 {
 	width: 960px;
 	background-color: #6C4A76;
-
 	margin: 0 auto;
+	box-shadow: 0 0 20px #000000;
 }
 
 body
 {
 	color: bl ack;
 	height: 100%;
+	background-repeat:no-repeat;
+  background-size:cover;
 }
 
 a
@@ -34,16 +36,17 @@ a
 #mainHeader h1
 {
 	font-family: Bangers;
-	font-size: 50px;
-	margin-top: 30px;
+	font-size: 70px;
+	margin-bottom: 20px;
 	padding-left: 300px;
-	margin-top: 30px;
+	margin-top: 40px;
+	letter-spacing: 2px;
 }
 
 #mainNav
 {
 	margin-left: auto;
-	margin-top: 100px;
+	margin-top: 130px;
 }
 
 #mainNav li
