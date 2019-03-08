@@ -8,14 +8,20 @@
 #siteContainer
 {
 	width: 960px;
-	height: 0px;
-	background-color: #efefef;
+	background-color: #6C4A76;
 	margin: 0 auto;
+	box-shadow: 0 0 20px #000000;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	border-radius: 20px;
 }
 
 body
 {
-	background-color: #efefef;
+	color: bl ack;
+	height: 100%;
+	background-repeat:no-repeat;
+  background-size:cover;
 }
 
 a
@@ -38,35 +44,50 @@ a
 #mainHeader h1
 {
 	font-family: Bangers;
-	font-size: 50px;
-	margin-top: 30px;
+	font-size: 70px;
+	margin-bottom: 20px;
 	padding-left: 300px;
-	margin-top: 30px;
+	margin-top: 40px;
+	letter-spacing: 2px;
+	color: #fff;
 }
 
 #mainNav
 {
 	margin-left: auto;
-	margin-top: 100px;
+	margin-top: 180px;
+	margin-right: 15px;
 }
 
 #mainNav li
 {
  display: inline;
- font-size: 20px;
+ font-size: 15px;
+ font-family: 'Cabin', sans-serif;
 }
 
 #mainNav ul li a
 {
   padding: 10px;
-	color: gray;
-	font-weight: 600;
+	color: white;
+	font-weight: 800;
+	transition: 0.3s;
+  position: relative;
+}
+
+#mainNav ul:hover li a
+{
+  transform: scale(1.5);
+  opacity: .2;
+  filter: blur(3px);
 }
 
 #mainNav ul li a:hover
 {
-	color: red;
-	opacity: 0.75;
+
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0px);
 }
 
 #about p
@@ -84,28 +105,22 @@ a
 	opacity: 0.45;
 }
 
+#mixer
+{
+	margin-bottom: 50px;
+}
+
 #turnTable
 {
-	height: 100px;
-  width: 100px;
-  background-color: red;
-  border-radius: 50%;
-	border-style: solid;
-	border-color: black;
-  border-width: 100px;
-  border-style: solid;
+	height: 300px;
+	width: 300px;
 	margin-top: -325px;
-	margin-left: 25px;
+	margin-left: 45px;
 }
-.turnTableDot
-{
-	height: 10px;
-  width: 10px;
-  background-color: black;
-  border-radius: 50%;
-	margin-top: -155px;
-	margin-bottom: 200px;
-	margin-left: 170px;
+
+#lines:hover {
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
 }
 
 #musicIcons h2
@@ -187,7 +202,7 @@ a
 {
 	width: 80px;
 	height: 80px;
-	background-color: yellow;
+	background-color: 	#FFB6C1;
 	justify-content: space-between;
 	margin-left: 20px;
 	border-style: solid;
@@ -199,6 +214,11 @@ a
 {
 	background-color: red;
 	opacity: 0.75;
+}
+
+#soundBoxs2
+{
+	padding-bottom: 90px;
 }
 
 
@@ -232,4 +252,11 @@ a
 {
 	color: red;
 	opacity: 0.75;
+}
+
+.sound 
+{
+	padding: 20px;
+	color: #fff;
+	font-family: 'Cabin', sans-serif;
 }
