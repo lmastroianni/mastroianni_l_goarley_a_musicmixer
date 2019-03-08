@@ -36,6 +36,11 @@ a
 	flex-direction: row;
 }
 
+#title
+{
+	margin: 0 auto;
+}
+
 #mainHeader h1
 {
 	font-family: Bangers;
@@ -79,11 +84,11 @@ a
 
 #mainNav ul li a:hover
 {
+
   transform: scale(2);
   opacity: 1;
   filter: blur(0px);
 }
-
 
 #about p
 {
@@ -241,4 +246,10 @@ a
 {
   padding: 15px;
 	color: black;
+}
+
+#footerNav ul li a:hover
+{
+	color: red;
+	opacity: 0.75;
 }
