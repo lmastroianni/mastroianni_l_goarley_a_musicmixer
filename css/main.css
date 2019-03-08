@@ -11,6 +11,9 @@
 	background-color: #6C4A76;
 	margin: 0 auto;
 	box-shadow: 0 0 20px #000000;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	border-radius: 20px;
 }
 
 body
@@ -41,26 +44,46 @@ a
 	padding-left: 300px;
 	margin-top: 40px;
 	letter-spacing: 2px;
+	color: #fff;
 }
 
 #mainNav
 {
 	margin-left: auto;
-	margin-top: 130px;
+	margin-top: 180px;
+	margin-right: 15px;
 }
 
 #mainNav li
 {
  display: inline;
- font-size: 20px;
+ font-size: 15px;
+ font-family: 'Cabin', sans-serif;
 }
 
 #mainNav ul li a
 {
   padding: 10px;
-	color: gray;
-	font-weight: 600;
+	color: white;
+	font-weight: 800;
+	transition: 0.3s;
+  position: relative;
 }
+
+#mainNav ul:hover li a
+{
+  transform: scale(1.5);
+  opacity: .2;
+  filter: blur(3px);
+}
+
+#mainNav ul li a:hover
+{
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0px);
+}
+
 
 #about p
 {
@@ -75,6 +98,11 @@ a
 	width: 960px;
 	background-color: black;
 	opacity: 0.45;
+}
+
+#mixer
+{
+	margin-bottom: 50px;
 }
 
 #turnTable
@@ -181,6 +209,11 @@ a
 {
 	background-color: red;
 	opacity: 0.75;
+}
+
+#soundBoxs2
+{
+	padding-bottom: 90px;
 }
 
 
