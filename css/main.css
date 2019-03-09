@@ -202,7 +202,7 @@ a
 {
 	width: 80px;
 	height: 80px;
-	background-color: yellow;
+	background-color: 	#FFB6C1;
 	justify-content: space-between;
 	margin-left: 20px;
 	border-style: solid;
@@ -252,4 +252,11 @@ a
 {
 	color: red;
 	opacity: 0.75;
+}
+
+.sound 
+{
+	padding: 20px;
+	color: #fff;
+	font-family: 'Cabin', sans-serif;
 }

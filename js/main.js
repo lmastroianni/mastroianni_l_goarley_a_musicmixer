@@ -1,5 +1,9 @@
-//create jar, name jar, place string in jar
-var firstName = "Lucas";
+(() => {
+
+
+	console.log("fired! Ready to groove")
+	
+}
 
 //alert is method (built in function in JS)
 //alert("Hello" + firstName);
@@ -9,4 +13,4 @@ var firstName = "Lucas";
 
 //console.log("Hello" + firstName);
 
-console.log("javascript linked up");
+
