@@ -97,13 +97,6 @@ a
 	margin: 50px;
 }
 
-.mainMusic
-{
-	height: 350px;
-	width: 960px;
-	background-color: black;
-	opacity: 0.45;
-}
 
 #mixer
 {
@@ -114,7 +107,6 @@ a
 {
 	height: 300px;
 	width: 300px;
-	margin-top: -325px;
 	margin-left: 45px;
 }
 
@@ -131,12 +123,19 @@ a
 	margin-top: 40px;
 }
 
-#soundBoxs1
+.soundBoxs1
 {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 20px;
 	margin-left: 260px;
+
+}
+
+#soundBoxs1 p
+{
+	margin-top: 18px;
+	margin-left: 14px;
 }
 
 #soundBoxs2
@@ -147,7 +146,15 @@ a
 	margin-left: 260px;
 }
 
-.box1
+.soundBoxs
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+#box1
 {
 	width: 80px;
 	height: 80px;
@@ -159,12 +166,12 @@ a
   border-width: 5px;
   border-style: solid;
 }
-.box1:hover
+#box1:hover
 {
 	background-color: red;
 	opacity: 0.75;
 }
-.box2
+#box2
 {
 	width: 80px;
 	height: 80px;
@@ -176,12 +183,12 @@ a
   border-width: 5px;
   border-style: solid;
 }
-.box2:hover
+#box2:hover
 {
 	background-color: red;
 	opacity: 0.75;
 }
-.box3
+#box3
 {
 	width: 80px;
 	height: 80px;
@@ -193,12 +200,12 @@ a
   border-width: 5px;
   border-style: solid;
 }
-.box3:hover
+#box3:hover
 {
 	background-color: red;
 	opacity: 0.75;
 }
-.box4
+#box4
 {
 	width: 80px;
 	height: 80px;
@@ -210,7 +217,7 @@ a
   border-width: 5px;
   border-style: solid;
 }
-.box4:hover
+#box4:hover
 {
 	background-color: red;
 	opacity: 0.75;
@@ -254,9 +261,69 @@ a
 	opacity: 0.75;
 }
 
-.sound 
+.sound
 {
 	padding: 20px;
 	color: #fff;
 	font-family: 'Cabin', sans-serif;
 }
+
+
+/* Drag & Drop Zone for tracks*/
+
+#mixer
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+#track-slot
+{
+	margin-left: 120px;
+}
+
+#game-boards {
+	width: 100%;
+	text-align: center;
+}
+
+.track-slot-drop-zone {
+	height: 250px;
+	display: inline-block;
+	border: medium solid #333;
+	background-color: #000;
+	color: inherit;
+	overflow: hidden;
+}
+
+.puzzle-board { width:300px; }
+
+.puzzle-image {
+	width: 40%;
+	display: block;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.puzzle-image:nth-child(even) {
+	float: right;
+	clear: both;
+}
+.puzzle-image:nth-child(odd) {
+	float: left;
+	clear: both;
+}
+
+.drop-zone {
+		width: 147.5px;
+  	height: 122.5px;
+  	border: thin dashed white;
+  	float: left;
+		position: relative;
+}
+
+.tl, .bl { text-aline: right; }
+.tr div { bottom: 0; }
+.tl div { bottom: 0; right:0; }
+.bl div { right: 0; }
