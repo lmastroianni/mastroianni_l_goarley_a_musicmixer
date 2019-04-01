@@ -13,7 +13,7 @@
 const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 	let puzzleBoard = document.querySelector(".track-slot-drop-zone");
-	let	puzzleSelectors = document.querySelectorAll(".soundBoxs div");
+	let	puzzleSelectors = document.querySelectorAll("#soundBoxs img");
 
 	let dropZones = document.querySelectorAll('.drop-zone');
 
@@ -21,8 +21,8 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 	// drag and drop functionality does here
 
 	function initDrag() {
-		puzzleSelectors.forEach(div => {
-			div.addEventListener("dragstart", function(e) {
+		puzzleSelectors.forEach(img => {
+			img.addEventListener("dragstart", function(e) {
 				console.log('dragging...')
 
 				e.dataTransfer.setData("text/plain", this.id);
@@ -47,6 +47,8 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 			let piece = e.dataTransfer.getData("text/plain");
 			e.target.appendChild(document.querySelector(`#${piece}`));
+
+
 		});
 	});
 
@@ -73,6 +75,8 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 	}
 
 	window.addEventListener('click', playSound);
+
+	initDrag();
 
 
 
