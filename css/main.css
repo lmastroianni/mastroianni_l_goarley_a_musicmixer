@@ -115,6 +115,15 @@ a
   transform-origin: 50% 50%;
 }
 
+#musicIcons h2
+{
+	font-family: Bangers;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
 
 #soundBoxs
 {
@@ -124,80 +133,13 @@ a
 	padding-bottom: 100px;
 }
 
-#box1
+/* #soundBoxs img
 {
-	width: 80px;
-	height: 80px;
-	background-color: green;
-	justify-content: space-between;
-	margin-left: 20px;
 	border-style: solid;
-	border-color: gray;
-  border-width: 5px;
-  border-style: solid;
-}
-#box1:hover
-{
-	background-color: red;
-	opacity: 0.75;
-}
-#box2
-{
-	width: 80px;
-	height: 80px;
-	background-color: orange;
-	justify-content: space-between;
-	margin-left: 20px;
-	border-style: solid;
-	border-color: gray;
-  border-width: 5px;
-  border-style: solid;
-}
-#box2:hover
-{
-	background-color: red;
-	opacity: 0.75;
-}
-#box3
-{
-	width: 80px;
-	height: 80px;
-	background-color: blue;
-	justify-content: space-between;
-	margin-left: 20px;
-	border-style: solid;
-	border-color: gray;
-  border-width: 5px;
-  border-style: solid;
-}
-#box3:hover
-{
-	background-color: red;
-	opacity: 0.75;
-}
-#box4
-{
-	width: 80px;
-	height: 80px;
-	background-color: 	#FFB6C1;
-	justify-content: space-between;
-	margin-left: 20px;
-	border-style: solid;
-	border-color: gray;
-  border-width: 5px;
-  border-style: solid;
-}
-#box4:hover
-{
-	background-color: red;
-	opacity: 0.75;
-}
-
-#soundBoxs2
-{
-	padding-bottom: 90px;
-}
-
+	border-color: #000;
+  border-width: 2px;
+	margin: 5px;
+} */
 
 #mainFooter
 {
@@ -261,9 +203,11 @@ a
 .track-slot-drop-zone {
 	display: inline-block;
 	border: medium solid #333;
-	background-color: #000;
 	color: inherit;
 	overflow: hidden;
+	width: 482px;
+	margin-right: 50px;
+	margin-top: 50px;
 }
 
 .puzzle-board { width:300px; }
@@ -285,8 +229,8 @@ a
 }
 
 .drop-zone {
-		width: 113.5px;
-		height: 114.5px;
+		width: 118.5px;
+		height: 80px;
   	border: thin dashed white;
   	float: left;
 		position: relative;
