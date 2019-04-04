@@ -61,6 +61,7 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 		 // try selecting the matching audio elemtent
 		 let audio = document.querySelector(`audio[data-id="${e.dataId}"]`);
 
+
 		 if (!audio) { return; }
 
 		 // Play audio track
@@ -69,8 +70,8 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 		// selects the parent div and animate it
 		// try selecting the matching audio elemtent
-		let key = document.querySelector(`div[data-id="${e.dataId}"]`);
-		key.classList.add('playing');
+		let id = document.querySelector(`div[data-id="${e.dataId}"]`);
+		id.classList.add('playing');
 
 	}
 
