@@ -48,6 +48,15 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 			let piece = e.dataTransfer.getData("text/plain");
 			e.target.appendChild(document.querySelector(`#${piece}`));
 
+			let audio = document.querySelector(`audio[data-id="${piece}"]`);
+
+
+		 if (!audio) { return; }
+
+		 // Play audio track
+    	 audio.play();
+    	 audio.loop = true;
+
 
 		});
 	});
@@ -70,14 +79,18 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 		// selects the parent div and animate it
 		// try selecting the matching audio elemtent
-		let id = document.querySelector(`div[data-id="${e.dataId}"]`);
-		id.classList.add('playing');
+		let key = document.querySelector(`div[data-id="${e.dataId}"]`);
+		key.classList.add('playing');
 
 	}
 
-	window.addEventListener('click', playSound);
+    window.addEventListener('click', playSound);
 
 	initDrag();
+
+	function reload() {
+		location.reload(); 
+	}
 
 
 
