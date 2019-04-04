@@ -129,6 +129,7 @@ a
 {
 	display: flex;
 	flex-direction: row;
+	margin: 10px;
 	justify-content: space-around;
 	padding-bottom: 100px;
 }
@@ -240,3 +241,17 @@ a
 .tr div { bottom: 0; }
 .tl div { bottom: 0; right:0; }
 .bl div { right: 0; }
+
+#button
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100px;
+	background-color: #fff;  
+	border-radius: 12px;
+	text-align: center;
+	margin-left: 195px;
+	margin-top: 20px;
+	font-family: 'Cabin', sans-serif;
+	
+}

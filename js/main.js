@@ -48,6 +48,15 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 			let piece = e.dataTransfer.getData("text/plain");
 			e.target.appendChild(document.querySelector(`#${piece}`));
 
+			let audio = document.querySelector(`audio[data-id="${piece}"]`);
+
+
+		 if (!audio) { return; }
+
+		 // Play audio track
+    	 audio.play();
+    	 audio.loop = true;
+
 
 		});
 	});
@@ -60,6 +69,7 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 		 // try selecting the matching audio elemtent
 		 let audio = document.querySelector(`audio[data-id="${e.dataId}"]`);
+
 
 		 if (!audio) { return; }
 
@@ -74,9 +84,13 @@ const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 	}
 
-	window.addEventListener('click', playSound);
+    window.addEventListener('click', playSound);
 
 	initDrag();
+
+	function reload() {
+		location.reload(); 
+	}
 
 
 
